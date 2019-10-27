@@ -9,6 +9,11 @@ client.on('message', message => {
   }
 })
 
+client.on("ready", () => {
+  console.log("Ready");
+  client.user.setGame("French Origin");
+})
+
 
 
 client.login(process.env.TOKEN)
