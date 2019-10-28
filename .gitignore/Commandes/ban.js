@@ -6,13 +6,13 @@ module.exports.run = (client, message, args) => {
     if (message.mentions.users.size === 0) { return message.channel.send('Vous devez mentionner un utilisateur !'); }
 
         let banMember = message.guild.member(message.mentions.users.first());
-        if (!banMember) { return message.channel.send('Je n\'ai pas trouvé l\'utilisateur !'); }
+        if (!banMember) { return message.channel.send('Je n\'ai pas trouvé **l\'utilisateur !**'); }
     
-        message.mentions.users.first().send(`Vous êtes banni du serveur **${message.guild.name}** par ${message.author.username}`)
+        message.mentions.users.first().send(`Vous êtes banni du serveur **${message.guild.name}** par **${message.author.username}**`)
             .then(() => {
                 banMember.ban()
                     .then((member) => {
-                        message.channel.send(`${member.user.username} est ban ! Par ${message.author.username}`);
+                        message.channel.send(`**${member.user.username}** est ban ! Par **${message.author.username}**`);
                     })
                         .catch((err) => {
                             if (err) { return console.error(err); }
@@ -22,7 +22,7 @@ module.exports.run = (client, message, args) => {
                     if (error) { console.error(error); }
                         banMember.ban()
                             .then((member) => {
-                                message.channel.send(`${member.user.username} est ban ! Par ${message.author.username}`);
+                                message.channel.send(`**${member.user.username}** est ban ! Par **${message.author.username}**`);
                             })
                                 .catch((err) => {
                                     if (err) { return console.error(err); }
