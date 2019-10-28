@@ -55,7 +55,7 @@ fs.readdir('./Events/', (error, f) => {
 
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
 
 
 
