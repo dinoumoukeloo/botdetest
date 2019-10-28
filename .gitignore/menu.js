@@ -11,7 +11,7 @@ client.on('message', message => {
 
 client.on("ready", () => {
   console.log("Ready");
-  client.user.setGame("★☆French Origin☆★");
+  client.user.setGame("On apprend nos erreurs mais la vie est une erreur , alors comment comprendre après la mort 😔");
 })
 
 
