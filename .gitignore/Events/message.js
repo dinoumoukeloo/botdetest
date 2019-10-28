@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const prefix = '!f';
+const prefix = '!d';
 
 
 
