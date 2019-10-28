@@ -1,4 +1,5 @@
 module.exports.run = (client, message, args) => {
+    message.delete()
 
     if (!args.join(' ')) { return message.channel.send('Vous n\'avez pas la spécifié un nom de role !'); }
 
