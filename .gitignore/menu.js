@@ -57,5 +57,5 @@ fs.readdir('./Events/', (error, f) => {
 
 client.login(process.env.TOKEN)
 
-
+https://cdn.discordapp.com/avatars/595363188074086402/a_9d62317f122e24020d3718fb9832a6c4.gif
 
